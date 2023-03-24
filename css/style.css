@@ -1,0 +1,35 @@
+/* settings */
+@import "reset.css";
+
+
+
+html, body {
+    height: 1000%;
+  }
+  
+  .my-box {
+    height: 100%;
+    width: 245px;
+    background-color: tomato;
+    position: fixed;
+  }
+
+main {
+    padding-left: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.testing-box {
+    height: 100px;
+    width: 900px;
+    background-color: wheat;
+}
+
+#world {
+    font-size: 20px;
+}
+
+.test_icon {
+    color: red;
+}
