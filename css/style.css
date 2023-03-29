@@ -1,17 +1,14 @@
 /* settings */
 @import "reset.css";
+@import "variables.css";
 
+/* components */
+@import "components/menu.css";
+/* screens */
 
 
 html, body {
     height: 1000%;
-  }
-  
-  .my-box {
-    height: 100%;
-    width: 245px;
-    background-color: tomato;
-    position: fixed;
   }
 
 main {
@@ -26,10 +23,3 @@ main {
     background-color: wheat;
 }
 
-#world {
-    font-size: 20px;
-}
-
-.test_icon {
-    color: red;
-}
