@@ -1,46 +1,65 @@
 .menu {
-    height: 100%;
-    width: 260px;
-    background-color: var(--main_color);
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0px 50px 30px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    box-sizing: border-box;
-  }
+  height: 100%;
+  width: 260px;
+  background-color: var(--main_color);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 37px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-sizing: border-box;
+}
 
 .gi_logo {
-  width: 136px;
-  height: 38px;
+width: 136px;
+height: 38px;
 }
 
 .menu__column {
-  margin-bottom: 40px;
-  margin-right: 59px;
-  display: flex;
-  align-items: center;
-  color: white;
+margin-bottom: 40px;
+display: flex;
+align-items: center;
+color: white;
 }
 
-.menu__column:first-child {
-  margin-top: 117px;
+.menu__columns {
+margin-top: 117px;
 }
 
 .menu__column > i {
-  font-size: 19px;
-  margin-right: 19px;
+font-size: 19px;
+margin-right: 19px;
 }
 
-.menu__column__text {
-  font-size: 18px;
-  margin-right: 30px;
-  position: relative;
+.menu__column > h6 {
+font-size: 18px;
 }
 
-.menu__column__subtitle {
-  position: absolute;
-  font-size: 11px;
-  right: 50px;
+.menu__column > span {
+font-size: 11px;
+}
+
+.menu__column:first-child > span {
+margin-left: 50px;
+}
+
+.menu__column:nth-child(2) > span {
+margin-left: 58px;
+}
+
+.menu__column:last-child > span {
+margin-left: 75px;
+}
+
+.menu__column__marker {
+background-color: white;
+color: var(--main_color);
+padding: 13px 16px;
+margin-left: -16px;
+border-radius: 30px;
+}
+
+.menu__column__margin-top__space {
+margin-top: -13px;
 }
