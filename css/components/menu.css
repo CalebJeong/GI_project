@@ -12,28 +12,28 @@
 }
 
 .gi_logo {
-width: 136px;
-height: 38px;
+  width: 136px;
+  height: 38px;
 }
 
 .menu__column {
-margin-bottom: 24px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-color: white;
-padding: 13px 16px;
-margin-left: -16px;
-border-radius: 30px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 13px 16px;
+  margin-left: -16px;
+  border-radius: 30px;
 }
 
 .menu__columns {
-margin-top: 117px;
+  margin-top: 117px;
 }
 
 .menu__column__marker {
-background-color: white;
-color: var(--main_color);
+  background-color: white;
+  color: var(--main_color);
 }
 
 .menu__column__title {
@@ -53,4 +53,3 @@ color: var(--main_color);
 .menu__column__subtitle {
   font-size: 11px;
 }
-
