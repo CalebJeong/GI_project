@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+@import "reset.css";
+@import "variables.css";
+@import "components/nav.css";
+
 * {
 	font-family: 'Pretendard-Regular';
     margin: 0;
@@ -16,21 +20,6 @@
     box-sizing: border-box;
 }
 
-@import "reset.css";
-
-:root{
-    /* ===== 색 ===== */
-    --body-color: #E4E9F7;
-    --sidebar-color: #5762EA;
-    --primary-color: #fff;
-    --text-color: #fff;
-
-    /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
-}
 
 body{
     min-height: 100vh;
