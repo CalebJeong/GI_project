@@ -26,3 +26,7 @@ body{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
+
+.home{
+    padding: 25px 27px;
+}

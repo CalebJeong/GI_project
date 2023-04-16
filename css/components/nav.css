@@ -24,7 +24,7 @@
   margin-top: 10px;
 }
 
-.sidebar header .image,
+.sidebar header .sidebar__logo__image,
 
 /* ============================ 아이콘, 텍스트 */ 
 .sidebar .icon{
@@ -94,23 +94,23 @@
   margin-top: 20px;
 }
 
-.sidebar header .image-text{
+.sidebar header .sidebar__logo{
   display: flex;
   align-items: center;
 }
 
-header .image-text .name {
+header .sidebar__logo .name {
   width: 60px;
   margin-left: 40px;
 }
 
-.sidebar header .image{
+.sidebar header .sidebar__logo__image{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar header .image img{
+.sidebar header .sidebar__logo__image img{
   width: 40px;
 }
 
@@ -137,7 +137,7 @@ header .image-text .name {
   transform: translateY(-50%) rotate(0deg);
 }
 
-.sidebar .menu{
+.sidebar .sidebar__menubar__menu{
   margin-top: 40px;
 }
 
@@ -167,7 +167,7 @@ header .image-text .name {
 }
 
 
-.sidebar .menu-bar{
+.sidebar .sidebar__menubar{
   height: calc(100% - 55px);
   display: flex;
   flex-direction: column;
@@ -175,7 +175,7 @@ header .image-text .name {
   overflow-y: scroll;
 }
 
-.menu-bar::-webkit-scrollbar{
+.sidebar__menubar::-webkit-scrollbar{
   display: none;
 }
 
