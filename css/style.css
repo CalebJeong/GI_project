@@ -1,6 +1,12 @@
 @import "reset.css";
 @import "variables.css";
+
+/*Screens*/
+@import "screens/meal.css";
+
+/*compenents*/
 @import "components/nav.css";
+
 
 
 @font-face {
@@ -35,8 +41,8 @@ body{
     float: left;
 }
 .home__content__top__second{
-    float: left;
     margin-left: 90px;
+    float: left;
 }
 
 .in-content-1{

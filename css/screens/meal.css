@@ -1,0 +1,7 @@
+.meal__components {
+    float: left;
+    margin-left: 90px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
