@@ -1,7 +1,51 @@
-.meal__components {
-    float: left;
-    margin-left: 90px;
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.meal__title {
+    margin-bottom: 80px;
+    
+}
+
+.meal__title__span {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.meal__component{
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 560px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 6px 0px rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.meal__component__daybox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 60px;
+    border-radius: 28px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -30px;
+}
+
+.meal__componet__title {
+    color: white;
+    font-size: 21px;
+}
+
+.meal__component__calendar {
+    margin-top: 40px;
+}
+
+.meal__component__calendar > i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.meal__component__calendar > span {
+    font-weight: 500;
+    font-size: 18px;
 }
