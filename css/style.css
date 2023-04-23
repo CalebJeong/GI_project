@@ -23,10 +23,39 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    background-color: var(--primary-color);
     transition: var(--tran-05);
 }
 
 .home{
-    padding: 25px 27px;
+    padding: 43px 60px;
+}
+
+.home__content__top__first{
+    float: left;
+}
+.home__content__top__second{
+    float: left;
+    margin-left: 90px;
+}
+
+.in-content-1{
+    width: 650px;
+}
+
+.in-content-2{
+    background-color: var(--primary-color);
+    width: 600px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 6px 0px rgb(220, 220, 220);
+}
+
+.title-1__text, .title-2__text{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.title-1, .title-2{
+    margin-bottom: 25px;
 }

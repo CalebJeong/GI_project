@@ -213,7 +213,7 @@ header .sidebar__logo .name {
   left: 250px;
   height: 100vh;
   width: calc(100% - 250px);
-  background-color: var(--body-color);
+  background-color: var(--primary-color);
   transition: var(--tran-05);
 }
 
