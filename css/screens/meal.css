@@ -12,6 +12,8 @@
     background-color: var(--primary-color);
     width: 300px;
     height: 560px;
+    padding-right: 35px;
+    padding-left: 35px;
     border-radius: 20px;
     box-shadow: inset 0px 0px 6px 0px rgb(220, 220, 220);
     display: flex;
@@ -36,16 +38,93 @@
     font-size: 21px;
 }
 
-.meal__component__calendar {
+
+.meal__component__content__calendar {
+    display: flex;
+    align-items: flex-start;
     margin-top: 40px;
 }
 
-.meal__component__calendar > i {
+.meal__component__content__calendar > i {
     margin-right: 5px;
     color: var(--main-color);
 }
 
-.meal__component__calendar > span {
+.meal__component__content__calendar > span {
     font-weight: 500;
     font-size: 18px;
+}
+
+.meal__component__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal__component__content__lunch {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 0.75px solid rgba(0,0,0,0.2);
+}
+
+.lunch__first__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.lunch__first__content > span {
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.lunch__second__content {
+    margin-right: 10px;
+}
+
+.lunch__second__content > ul > li {
+    font-size: 18;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.lunch__second__content > ul > li:last-child {
+    margin-bottom: 0px;
+}
+
+.meal__component__content__dinner {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dinner__first__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0,0,0,0.7);
+}
+
+.dinner__first__content > span {
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.dinner__second__content {
+    margin-right: 10px;
+}
+
+.dinner__second__content > ul > li {
+    font-size: 18;
+    margin-bottom: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+.dinner__second__content > ul > li:last-child {
+    margin-bottom: 0px;
 }
