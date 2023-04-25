@@ -42,7 +42,7 @@
 .meal__component__content__calendar {
     display: flex;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .meal__component__content__calendar > i {
@@ -64,7 +64,7 @@
 .meal__component__content__lunch {
     width: 230px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
@@ -84,7 +84,7 @@
 }
 
 .lunch__second__content {
-    margin-right: 10px;
+    margin-left: 70px;
 }
 
 .lunch__second__content > ul > li {
@@ -100,7 +100,7 @@
 .meal__component__content__dinner {
     width: 230px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .dinner__first__content {
@@ -116,7 +116,7 @@
 }
 
 .dinner__second__content {
-    margin-right: 10px;
+    margin-left: 70px;
 }
 
 .dinner__second__content > ul > li {
