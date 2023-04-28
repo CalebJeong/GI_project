@@ -1,3 +1,7 @@
+#meal__home__padding {
+    padding-right: 0px;
+}
+
 .meal__title {
     margin-bottom: 80px;
     
@@ -19,6 +23,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin-right: 30px;
 }
 
 .meal__component__daybox {
@@ -53,6 +58,15 @@
 .meal__component__content__calendar > span {
     font-weight: 500;
     font-size: 18px;
+}
+
+.meal__components {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    padding-top: 40px;
 }
 
 .meal__component__content {
