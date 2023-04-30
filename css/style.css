@@ -3,6 +3,7 @@
 
 /*Screens*/
 @import "screens/meal.css";
+@import "screens/time.css";
 
 /*compenents*/
 @import "components/nav.css";
@@ -64,4 +65,9 @@ body{
 
 .title-1, .title-2{
     margin-bottom: 25px;
+}
+
+.page__title {
+    color: var(--main-color);
+    font-size: 20px;
 }

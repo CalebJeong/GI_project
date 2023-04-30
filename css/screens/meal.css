@@ -7,11 +7,6 @@
     
 }
 
-.meal__title__span {
-    color: var(--main-color);
-    font-size: 20px;
-}
-
 .meal__component{
     background-color: var(--primary-color);
     width: 300px;
@@ -19,7 +14,7 @@
     padding-right: 35px;
     padding-left: 35px;
     border-radius: 20px;
-    box-shadow: inset 0px 0px 6px 0px rgb(220, 220, 220);
+    box-shadow: var(--shadow);
     display: flex;
     justify-content: center;
     position: relative;
@@ -67,6 +62,7 @@
     overflow-y:hidden;
     overflow-x:scroll;
     padding-top: 40px;
+    padding-bottom: 15px;
 }
 
 .meal__component__content {
@@ -82,7 +78,7 @@
     margin-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 0.75px solid rgba(0,0,0,0.2);
+    border-bottom: var(--border-color);
 }
 
 .lunch__first__content {
@@ -141,4 +137,8 @@
 
 .dinner__second__content > ul > li:last-child {
     margin-bottom: 0px;
+}
+
+.meal__component:first-child {
+    margin-left: 5px;
 }
