@@ -3,7 +3,7 @@
 }
 
 .week__box {
-    width: 100%;
+    width: 1216px;
     height: 390px;
     background-color: var(--primary-color);
     box-shadow: var(--shadow);
