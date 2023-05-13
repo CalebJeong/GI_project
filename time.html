@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
     
     <link rel="stylesheet" href="css/style.css">
     <title>지아이 개선</title>
@@ -187,7 +188,28 @@
                 </div>
             </div>
         </div>
+        
+        <div id="calendar_box" style="width: 1219px;">
+            <div id='calendar'></div>
+        </div>
+
     </section>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            googleCalendarApiKey: 'AIzaSyCoup9jxgMeo5zTrt0D2KOk_kEDdjr0Rrw',
+			events: {
+			    googleCalendarId: 'fa5d01041fee561a4757ee7e24ecd0fa1c017de772b28d2436739725923e299b@group.calendar.google.com',
+				className: 'gcal-event' // an option!
+			},
+          });
+          calendar.render();
+        });
+  
+    </script>
 
     <script>
         const body = document.querySelector('body'),
