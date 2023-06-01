@@ -4,6 +4,7 @@
 /*Screens*/
 @import "screens/meal.css";
 @import "screens/time.css";
+@import "screens/home.css";
 
 /*compenents*/
 @import "components/nav.css";
@@ -36,14 +37,6 @@ body{
 
 .home{
     padding: 43px 80px;
-}
-
-.home__content__top__first{
-    float: left;
-}
-.home__content__top__second{
-    margin-left: 90px;
-    float: left;
 }
 
 .in-content-1{
