@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="signUp__init">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="signUp__init">
+    <div class="sign-up">
+        <div class="signup__box">
+            <img src="img/gi_icon.png">
+            <span>이메일을 사용해서 지아이에 회원가입하세요</span>
+            <div class="signup__input__box">
+                <input type="text" id="userEmail" placeholder="이메일을 입력해주세요">
+                <input type="password" id="userPassword" placeholder="비밀번호를 입력해주세요">
+            </div>
+            <button class="signup__button" id="signUpButton">가입하기</button>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+        } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBmlHnZkuyZL80aL8zrKUOMSx1BjYIM-Kk",
+          authDomain: "gi-firebase.firebaseapp.com",
+          projectId: "gi-firebase",
+          storageBucket: "gi-firebase.appspot.com",
+          messagingSenderId: "621923580259",
+          appId: "1:621923580259:web:7f1861b2d85b6b95127b56"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const userEmail = document.querySelector("#userEmail");
+        const userPassword = document.querySelector("#userPassword");
+        const signUpButton = document.querySelector("#signUpButton");
+
+        const userSignUp = async() => {
+            const signUpEmail = userEmail.value;
+            const signUpPassword = userPassword.value;
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+            .then((userCredential) => {
+                const user = userCredential.user
+                console.log(user);
+                alert("성공했어유~");
+                redirectToLoginPage();
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage);
+            })
+        }
+
+        const redirectToLoginPage = () => {
+            window.location.href = "login.html";
+        }
+
+        signUpButton.addEventListener('click', userSignUp);
+
+      </script>
+</body>
+</html>

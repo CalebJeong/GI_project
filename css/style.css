@@ -1,10 +1,13 @@
 @import "reset.css";
 @import "variables.css";
+@import "cssForJavascript.css";
 
 /*Screens*/
 @import "screens/meal.css";
 @import "screens/time.css";
 @import "screens/home.css";
+@import "screens/signup.css";
+@import "screens/login.css";
 
 /*compenents*/
 @import "components/nav.css";
