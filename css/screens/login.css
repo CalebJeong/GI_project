@@ -62,17 +62,17 @@
     width: 556px;
     height: 63px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .login__button__box button {
-    width: 277px;
+    width: 310px;
     height: 63px;
     border-radius: 40px;
     background-color: var(--main-color);
     color: white;
-    font-size: 21px;
+    font-size: 23px;
     border: none;
 }
 
